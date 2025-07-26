@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f3eeed69268d246b19c808e2343e23, type: 3}
+  m_Name: PlayerStatsDefault
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  acceleration: 150
+  maxSpeed: 100
+  drag: 2
+  maxHealth: 500
+  shieldDuration: 3
+  shieldCooldown: 10
+  fireRate: 0.2
+  bulletDamage: 15
+  bulletSpeed: 150
+  criticalChance: 0
+  criticalMultiplier: 2
+  areaEffectMultiplier: 1
+  projectilePierce: 0
+  projectileBounce: 0
+  projectileSpread: 0
+  projectileLifetime: 3
+  projectileSizeMultiplier: 1
+  damageOverTimeMultiplier: 1
+  armor: 0
+  damageResistance: 0
+  dodgeChance: 0
+  xpGainMultiplier: 1
+  pickupRange: 15
+  cooldownReduction: 0
+  perkLuck: 0
