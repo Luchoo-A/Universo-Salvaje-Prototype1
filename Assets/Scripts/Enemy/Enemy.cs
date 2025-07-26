@@ -98,6 +98,7 @@ public abstract class Enemy : MonoBehaviour
         EnemyPoolManager.Instance.ReturnEnemy(gameObject, poolIndex);
     }
 
+    //Metodo de movimiento de cada Enemigo
     protected abstract void HandleMovement();
 
     void FixedUpdate() => HandleMovement();

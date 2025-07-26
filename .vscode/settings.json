@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Universo Salvaje Prototype.sln"
+    "dotnet.defaultSolution": "Universo-Salvaje-PrototypeGit.sln"
 }
