@@ -55,9 +55,10 @@ El jugador controla una nave que debe sobrevivir a enemigos que se generan diná
 
 ## 📄 Licencia
 
-Este proyecto fue creado con fines de aprendizaje y portafolio.  
-No está autorizada su reproducción comercial ni el uso de assets externos incluidos.  
-Para más información, contactame.
+Este proyecto fue creado con fines educativos y de portafolio.
+Solo se incluye una versión parcial (demo) del juego.
+Todos los derechos están reservados sobre el contenido, diseño, mecánicas y assets del juego completo.
+No está autorizada su reproducción, distribución o uso comercial sin permiso expreso del autor.
 
 ---
 
@@ -120,9 +121,7 @@ The player controls a spaceship and must survive in a hostile environment with c
 
 ## 📄 License
 
-This project was created for educational and portfolio purposes.  
-Commercial use or redistribution of included assets is not permitted.  
-For more information, feel free to contact me.
-
-
-
+This project was created for educational and portfolio purposes.
+Only a partial version (demo) of the game is included here.
+All rights are reserved regarding the full game's content, design, mechanics, and assets.
+Reproduction, distribution, or commercial use is not permitted without the author's explicit permission.
