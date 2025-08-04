@@ -45,5 +45,32 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 312127497
+    locked: 0
+  - name: Limits
+    uniqueID: 1164243491
+    locked: 0
+  - name: Xp
+    uniqueID: 2546102339
+    locked: 0
+  - name: Asteroids
+    uniqueID: 857374591
+    locked: 0
+  - name: Enemy Bullet
+    uniqueID: 3257422049
+    locked: 0
+  - name: Enemy
+    uniqueID: 2219414807
+    locked: 0
+  - name: PlayerBullet
+    uniqueID: 309271533
+    locked: 0
+  - name: Player
+    uniqueID: 4216226027
+    locked: 0
+  - name: Fx
+    uniqueID: 2508165605
+    locked: 0
   m_RenderingLayers:
   - Default

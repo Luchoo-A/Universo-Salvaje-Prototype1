@@ -83,10 +83,10 @@ public abstract class Enemy : MonoBehaviour
             orb.GetComponent<XPOrb>().SetXP(stats.xpDrop);
         }
 
-        // 🎁 Drop de recompensa (items, monedas, etc.)
+        // Drop de recompensa (items, monedas, etc.)
         if (UnityEngine.Random.value < stats.dropChance)
         {
-            Debug.Log("💰 Enemigo soltó un ítem");
+            Debug.Log("Enemigo soltó un ítem");
         }
 
         // Notificar al spawner que este enemigo murió
@@ -97,6 +97,17 @@ public abstract class Enemy : MonoBehaviour
 
         EnemyPoolManager.Instance.ReturnEnemy(gameObject, poolIndex);
     }
+
+    //Metodo para curar Enemigos
+    public virtual void Heal(float amount)
+    {
+        if (!IsAlive) return;
+
+        currentHealth = Mathf.Min(currentHealth + amount, stats.maxHealth);
+        // Aquí podrías agregar un pequeño efecto visual
+    }
+
+
 
     //Metodo de movimiento de cada Enemigo
     protected abstract void HandleMovement();

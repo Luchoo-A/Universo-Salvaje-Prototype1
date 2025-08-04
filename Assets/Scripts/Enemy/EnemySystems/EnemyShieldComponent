@@ -1,0 +1,43 @@
+using UnityEngine;
+
+
+public class EnemyShieldComponent : MonoBehaviour
+{
+    [SerializeField] private float maxShieldPoints = 20f;
+
+    private float currentShieldPoints;
+    private bool active = false;
+
+    public bool IsShieldActive => active;
+
+    public void ActivateShield()
+    {
+        currentShieldPoints = maxShieldPoints;
+        active = true;
+        ShowVisual(true);
+    }
+
+    public void DeactivateShield()
+    {
+        active = false;
+        ShowVisual(false);
+    }
+
+    public void TakeShieldDamage(float damage)
+    {
+        if (!active) return;
+
+        currentShieldPoints -= damage;
+
+        if (currentShieldPoints <= 0)
+        {
+            DeactivateShield();
+        }
+    }
+
+    private void ShowVisual(bool show)
+    {
+        // Aquí puedes activar/desactivar efectos visuales del escudo enemigo
+        // Ej: shieldVFX.SetActive(show);
+    }
+}
