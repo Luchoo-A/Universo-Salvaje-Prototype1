@@ -4,7 +4,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     [Header("Stats")]
-    public EnemyStatsSO stats; // 🧠 ScriptableObject con todos los valores configurables
+    public EnemyStatsSO stats; // ScriptableObject con todos los valores configurables
 
     protected Rigidbody2D rb;
     protected Transform player;
@@ -42,14 +42,22 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void TakeDamage(float amount, bool isCrit)
     {
-        // 💢 Esquiva si tiene dodgeChance
+        // Esquiva si tiene dodgeChance
         if (UnityEngine.Random.value < stats.dodgeChance)
         {
             Debug.Log("🌀 Enemigo esquivó el daño");
             return;
         }
 
-        // 🛡️ Aplica reducción de daño por armadura y resistencia
+        // Buscar el componente de escudo
+        var shield = GetComponent<EnemyShieldComponent>();
+        if (shield != null && shield.IsShieldActive)
+        {
+            shield.TakeShieldDamage(amount);
+            return; // No se daña la vida si el escudo está activo
+        }
+
+        // Aplica reducción de daño por armadura y resistencia
         float reduced = Mathf.Max(amount - stats.armor, 0f);
         float finalDamage = reduced * (1f - stats.damageResistance);
 
@@ -72,11 +80,11 @@ public abstract class Enemy : MonoBehaviour
     {
         rb.linearVelocity = Vector2.zero;
 
-        // 🎇 Instanciar explosión
+        // Instanciar explosión
         if (explosionEffect != null)
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
 
-        // 💠 Soltar XP
+        // Soltar XP
         if (xpOrbPrefab != null)
         {
             GameObject orb = Instantiate(xpOrbPrefab, transform.position, Quaternion.identity);

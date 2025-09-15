@@ -828,6 +828,7 @@ MonoBehaviour:
   - {fileID: 7020024689127934603, guid: 33cc6c312e0f36e4ebf7c5a3bb0de88e, type: 3}
   - {fileID: 7481498527924969595, guid: e9029021d624e9445b40e6daa25d77c8, type: 3}
   - {fileID: 6335621492000905565, guid: 7ef5c3a425e870548a90f91f361bbedc, type: 3}
+  - {fileID: 2825138782523459759, guid: 52a8a45080c3ccd429dc334946bb7b22, type: 3}
 --- !u!1 &494014166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,6 +2703,7 @@ MonoBehaviour:
   - {fileID: 7020024689127934603, guid: 33cc6c312e0f36e4ebf7c5a3bb0de88e, type: 3}
   - {fileID: 7481498527924969595, guid: e9029021d624e9445b40e6daa25d77c8, type: 3}
   - {fileID: 6335621492000905565, guid: 7ef5c3a425e870548a90f91f361bbedc, type: 3}
+  - {fileID: 2825138782523459759, guid: 52a8a45080c3ccd429dc334946bb7b22, type: 3}
   initialPoolSize: 20
 --- !u!4 &1875336836
 Transform:
@@ -2752,10 +2754,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7c6ca1f81d2af84e8691fce1388b328, type: 2}
   - {fileID: 11400000, guid: aab0bca1576a1a046afe0b8ba5fc2edc, type: 2}
   - {fileID: 11400000, guid: 352b98d9ee451514b8c67d87ad9037f8, type: 2}
+  - {fileID: 11400000, guid: d4fd8b4f9db8c8541929a7ca0fa7cfb9, type: 2}
   matchDuration: 900
   spawnInterval: 4
-  spawnEventsSO:
-  - {fileID: 11400000, guid: 7fb0fcd06c071cf40b14f05bb14de012, type: 2}
+  spawnEventsSO: []
   eventStartTime: 10
   minTimeBetweenEvents: 60
   maxTimeBetweenEvents: 120

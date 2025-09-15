@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1561430027706758304}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0142854955, y: -1.26, z: 0}
+  m_LocalPosition: {x: 0.0142854955, y: -1.054, z: 0}
   m_LocalScale: {x: 0.8571428, y: 0.8571428, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -2075552489
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2021064506979229775, guid: f6b5e94f4ac9aab43a8fb2f27219c63a, type: 3}
+  m_Sprite: {fileID: 3497941019753237078, guid: fb899192af794a64d96e1da60be94b59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1561430027706758304}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2fa52f73277d1694db64276c2d6992e6, type: 2}
+  m_Controller: {fileID: 9100000, guid: d6e6aa19623ffb04983c1e350b642114, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -123,8 +123,9 @@ GameObject:
   - component: {fileID: 6515016257815605422}
   - component: {fileID: 5685335513506171479}
   - component: {fileID: 7703555191380435026}
+  - component: {fileID: 4905552123302492312}
   m_Layer: 6
-  m_Name: Support Ship
+  m_Name: SupportShip
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,11 +140,10 @@ Transform:
   m_GameObject: {fileID: 2825138782523459759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53, y: -19.2, z: 0}
+  m_LocalPosition: {x: -56.6, y: -22.5, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1913049775128718801}
   - {fileID: 2432439080926199096}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -279,34 +279,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashDuration: 0.1
---- !u!1 &6752734781957456146
-GameObject:
+--- !u!114 &4905552123302492312
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1913049775128718801}
-  m_Layer: 6
-  m_Name: Fire Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1913049775128718801
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6752734781957456146}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6531961764586937045}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 2825138782523459759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a358915ba21a2546a562ec4e7d4070b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 4a99829796b9287419afec6f87c2b05a, type: 2}
+  explosionEffect: {fileID: 3278908833902465205, guid: dac759ad2885d1f4eb918a672d316144, type: 3}
+  xpOrbPrefab: {fileID: 3343263146013788877, guid: 0584f0d02f92ea145b53ae5289dd6313, type: 3}
+  poolIndex: 0
+  supportRange: 60
+  shieldCooldown: 5
+  maxConnections: 3
+  shieldConnectionPrefab: {fileID: 3412318891859762378, guid: c4618f7ad7164f14883719812c6ab60d, type: 3}
+  healRadius: 60
+  healAmount: 2
+  healInterval: 1.5
+  safeDistanceFromPlayer: 80
+  stopDistanceFromPlayer: 50

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77d94defe3a83c340b118aba93e77c33, type: 3}
-  m_Name: Fighter_EnemySpawnData
+  m_Name: Support
   m_EditorClassIdentifier: 
-  enemyName: Fighter
-  enemyPrefab: {fileID: 7020024689127934603, guid: 33cc6c312e0f36e4ebf7c5a3bb0de88e, type: 3}
-  unlockTime: 0
-  spawnWeight: 60
+  enemyName: SupportShip
+  enemyPrefab: {fileID: 2825138782523459759, guid: 52a8a45080c3ccd429dc334946bb7b22, type: 3}
+  unlockTime: 45
+  spawnWeight: 5
